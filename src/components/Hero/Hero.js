@@ -9,7 +9,7 @@ function Hero() {
   return (
     <div className="hero is-large">
       <img src={background} alt="background" className="background" />
-      <div className="hero-body my-hero ">
+      <div className="hero-body">
         <div className="container is-fluid my-container">
           <div>
             <h1 className="title my-name">Jesus Lencina</h1>

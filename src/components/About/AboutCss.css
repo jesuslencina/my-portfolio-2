@@ -2,16 +2,43 @@
   background-color: #59beb6;
   clip-path: polygon(0 15%, 100% 0, 100% 85%, 0% 100%);
   padding: 14rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  align-items: center;
+  color: whitesmoke;
+  text-align: center;
 }
 
-.my-card {
-  width: fit-content;
-  margin: 0 auto;
+.pic {
+  width: 25vw;
+}
+
+.my-text {
+  width: 50%;
+  font-size: 1.5rem;
+}
+
+.my-title {
+  color: white;
+  font-size: 3.5rem;
 }
 
 @media screen and (max-width: 769px) {
   .my-section {
     clip-path: polygon(0 10%, 100% 0, 100% 80%, 0% 100%);
     padding: 10rem 0;
+  }
+  .pics {
+    width: 80vw;
+  }
+
+  .my-text {
+    width: 90%;
+    font-size: 1.25rem;
+  }
+
+  .my-title {
+    font-size: 2.5rem;
   }
 }
