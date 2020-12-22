@@ -1,3 +1,10 @@
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  opacity: 50%;
+}
+
 .my-container {
   display: flex;
   justify-content: space-between;
