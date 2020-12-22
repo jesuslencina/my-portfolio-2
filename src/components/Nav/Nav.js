@@ -23,7 +23,6 @@ function Nav() {
           className={`navbar-burger ${burger}`}
           aria-label="menu"
           aria-expanded="false"
-          href="#"
           onClick={() =>
             burger === '' ? setBurger('is-active') : setBurger('')
           }
@@ -39,7 +38,7 @@ function Nav() {
           <a href="#" className="navbar-item">
             Home
           </a>
-          <a href="#" className="navbar-item">
+          <a href="#about" className="navbar-item">
             About
           </a>
         </div>

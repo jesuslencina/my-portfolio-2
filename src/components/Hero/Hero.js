@@ -13,7 +13,9 @@ function Hero() {
         <div className="container is-fluid my-container">
           <div>
             <h1 className="title my-name">Jesus Lencina</h1>
-            <h2 className="subtitle my-position">Frontend Web Developer</h2>
+            <h2 className="subtitle my-position is-secondary">
+              Frontend Web Developer
+            </h2>
           </div>
           <figure className="image is-1by2">
             <img src={me} alt="me" className="me" />

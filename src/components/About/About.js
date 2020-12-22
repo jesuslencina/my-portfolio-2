@@ -6,7 +6,7 @@ import pics from '../../assets/pics.png';
 
 function About() {
   return (
-    <section className="section my-section">
+    <section className="section my-section" id="about">
       <figure class="image is-16by9">
         <img
           src={pics}

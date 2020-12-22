@@ -13,11 +13,11 @@
 }
 
 .my-name {
-  font-size: 4rem;
+  font-size: 5rem;
 }
 
 .my-position {
-  font-size: 1.75rem;
+  font-size: 2.75rem;
 }
 
 .me {
@@ -33,8 +33,13 @@
     flex-direction: column-reverse;
   }
 
-  .my-name,
+  .my-name {
+    font-size: 4rem;
+    text-align: center;
+  }
+
   .my-position {
+    font-size: 1.75rem;
     text-align: center;
   }
 
