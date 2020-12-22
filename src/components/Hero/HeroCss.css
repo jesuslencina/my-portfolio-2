@@ -17,12 +17,17 @@
 }
 
 @media screen and (max-width: 769px) {
-  .my-hero {
+  .my-container {
     flex-direction: column-reverse;
   }
 
   .my-name,
   .my-position {
     text-align: center;
+  }
+
+  .me {
+    padding-top: 2rem;
+    width: 15rem;
   }
 }

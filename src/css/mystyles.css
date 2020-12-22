@@ -3290,7 +3290,7 @@ a.navbar-item,
       padding: 9rem 1.5rem; } }
   @media screen and (min-width: 769px), print {
     .hero.is-large .hero-body {
-      padding: 12.5rem; } }
+      padding: 10.5rem; } }
   .hero.is-halfheight .hero-body, .hero.is-fullheight .hero-body, .hero.is-fullheight-with-navbar .hero-body {
     align-items: center;
     display: flex; }

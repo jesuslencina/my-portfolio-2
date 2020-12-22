@@ -8,3 +8,10 @@
   width: fit-content;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 769px) {
+  .my-section {
+    clip-path: polygon(0 10%, 100% 0, 100% 80%, 0% 100%);
+    padding: 10rem 0;
+  }
+}
