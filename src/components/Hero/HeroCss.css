@@ -1,0 +1,28 @@
+.my-hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.my-name {
+  font-size: 4rem;
+}
+
+.my-position {
+  font-size: 1.75rem;
+}
+
+.me {
+  width: 20rem;
+}
+
+@media screen and (max-width: 769px) {
+  .my-hero {
+    flex-direction: column-reverse;
+  }
+
+  .my-name,
+  .my-position {
+    text-align: center;
+  }
+}
