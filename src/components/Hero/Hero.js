@@ -6,9 +6,9 @@ import me from '../../assets/me.png';
 
 function Hero() {
   return (
-    <div className="hero  is-fullheight">
-      <div className="hero-body">
-        <div className="container is-fluid my-hero">
+    <div className="hero is-large">
+      <div className="hero-body my-hero ">
+        <div className="container is-fluid my-container">
           <div>
             <h1 className="title my-name">Jesus Lencina</h1>
             <h2 className="subtitle my-position">Frontend Web Developer</h2>

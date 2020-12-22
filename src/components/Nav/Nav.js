@@ -14,7 +14,7 @@ function Nav() {
       aria-label="main navigation">
       <div className="navbar-brand">
         <a className="navbar-item" href="https://bulma.io">
-          <img src={favicon} width="26" height="26" />
+          <img src={favicon} width="26" height="26" alt="Icon" />
         </a>
         <p class="navbar-item name">Jesus Lencina</p>
 
@@ -23,6 +23,7 @@ function Nav() {
           className={`navbar-burger ${burger}`}
           aria-label="menu"
           aria-expanded="false"
+          href="#"
           onClick={() =>
             burger === '' ? setBurger('is-active') : setBurger('')
           }
@@ -35,8 +36,12 @@ function Nav() {
 
       <div id="navbarBasicExample" className={`navbar-menu ${burger}`}>
         <div className="navbar-end">
-          <a className="navbar-item">Home</a>
-          <a className="navbar-item">About</a>
+          <a href="#" className="navbar-item">
+            Home
+          </a>
+          <a href="#" className="navbar-item">
+            About
+          </a>
         </div>
       </div>
     </nav>
