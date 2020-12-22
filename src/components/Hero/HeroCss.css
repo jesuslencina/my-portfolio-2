@@ -23,7 +23,12 @@
   width: 20rem;
 }
 
-@media screen and (max-width: 769px) {
+@media screen and (max-width: 1799px) {
+  .background {
+    transform: rotate(90deg);
+    display: none;
+  }
+
   .my-container {
     flex-direction: column-reverse;
   }
