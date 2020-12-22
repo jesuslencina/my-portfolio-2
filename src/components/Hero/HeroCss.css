@@ -3,6 +3,7 @@
   top: 0;
   z-index: -1;
   opacity: 50%;
+  background-repeat: repeat-y;
 }
 
 .my-container {
@@ -23,9 +24,8 @@
   width: 20rem;
 }
 
-@media screen and (max-width: 1799px) {
+@media screen and (max-width: 1023px) {
   .background {
-    transform: rotate(90deg);
     display: none;
   }
 
