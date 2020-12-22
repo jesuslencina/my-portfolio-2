@@ -33,7 +33,7 @@ function Nav() {
         </a>
       </div>
 
-      <div id="navbarBasicExample" className={`navbar-menu ${burger}`}>
+      <div className={`navbar-menu ${burger}`}>
         <div className="navbar-end">
           <a href="#" className="navbar-item">
             Home
