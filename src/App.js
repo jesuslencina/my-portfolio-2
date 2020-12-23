@@ -5,6 +5,7 @@ import './css/mystyles.css';
 import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
+import Knowledge from './components/Knowledge/Knowledge';
 
 //FUNCTION
 function App() {
@@ -13,6 +14,7 @@ function App() {
       <Nav />
       <Hero />
       <About />
+      <Knowledge />
     </div>
   );
 }
