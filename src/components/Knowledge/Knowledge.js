@@ -26,7 +26,7 @@ function Knowledge() {
   ));
 
   return (
-    <section className="section my-knowledge">
+    <section className="section my-knowledge" id="skills">
       <h2 className="title is-size-1">SKILLS</h2>
       <p className="mb-3">Click on each item to read a brief description!</p>
       <h3 className="subtitle is-size-3 mt-1">Coding</h3>

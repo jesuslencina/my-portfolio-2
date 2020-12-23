@@ -37,6 +37,9 @@ function Nav() {
           <a href="#about" className="navbar-item">
             About
           </a>
+          <a href="#skills" className="navbar-item">
+            Skills
+          </a>
         </div>
       </div>
     </nav>
