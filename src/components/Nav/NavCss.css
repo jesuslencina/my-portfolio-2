@@ -3,3 +3,12 @@
   padding: 0;
   font-weight: 800;
 }
+
+.my-burger {
+  background-color: white;
+  border: none;
+}
+
+.my-burger:focus {
+  outline: none;
+}

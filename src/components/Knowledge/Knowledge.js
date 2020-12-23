@@ -13,7 +13,7 @@ function Knowledge() {
   return (
     <section className="section my-knowledge">
       <h2 className="title is-size-1">SKILLS</h2>
-      <h3 className="subtitle is-size-1">Coding</h3>
+      <h3 className="subtitle is-size-3 mt-1">Coding</h3>
       <div className="tile tile is-ancestor">
         <div className="tile is-parent my-container">{codingList}</div>
       </div>
