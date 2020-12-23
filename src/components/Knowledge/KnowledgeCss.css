@@ -20,7 +20,7 @@
 }
 
 .my-item img {
-  width: 15rem;
+  width: 5rem;
 }
 
 .my-item p {
@@ -32,6 +32,10 @@
 }
 
 @media screen and (max-width: 769px) {
+  .my-container {
+    flex-direction: column;
+  }
+
   .my-item {
     margin-top: 2rem;
   }
