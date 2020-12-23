@@ -16,7 +16,7 @@ function About() {
       </figure>
 
       <div className="my-text">
-        <h2 className="title is-size-1 has-text-white">WHO'S THIS GUY?</h2>
+        <h2 className="title is-size-1 has-text-white">WHO AM I?</h2>
 
         <p className="has-text-white is-size-4">
           Hey there! My name is Jesus, and I'm a trainee web developer. I'm 19

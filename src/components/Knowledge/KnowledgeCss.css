@@ -31,6 +31,15 @@
   transform: scale(1.25);
 }
 
+.my-burger {
+  background-color: white;
+  border: none;
+}
+
+.my-burger:focus {
+  outline: none;
+}
+
 @media screen and (max-width: 769px) {
   .my-container {
     flex-direction: column;

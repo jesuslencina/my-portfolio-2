@@ -18,9 +18,8 @@ function Nav() {
         </a>
         <p class="navbar-item name">Jesus Lencina</p>
 
-        <a
-          role="button"
-          className={`navbar-burger ${burger}`}
+        <button
+          className={`navbar-burger my-burger ${burger}`}
           aria-label="menu"
           aria-expanded="false"
           onClick={() =>
@@ -30,14 +29,11 @@ function Nav() {
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
-        </a>
+        </button>
       </div>
 
       <div className={`navbar-menu ${burger}`}>
         <div className="navbar-end">
-          <a href="#" className="navbar-item">
-            Home
-          </a>
           <a href="#about" className="navbar-item">
             About
           </a>
