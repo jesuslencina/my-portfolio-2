@@ -1,14 +1,20 @@
 import React from 'react';
 
+import { coding } from './knowledgeData';
+
 import KnowledgeItem from './KnowledgeItem';
 
 import './KnowledgeCss.css';
 
 function Knowledge() {
-  //LIST
-  const coding = ['HTML', 'CSS', 'SASS', 'JAVASCRIPT', 'REACT'];
-
-  const codingList = coding.map((item) => <KnowledgeItem name={item} />);
+  const codingList = coding.map((item) => (
+    <KnowledgeItem
+      key={item.id}
+      name={item.name}
+      img={item.img}
+      desc={item.desc}
+    />
+  ));
 
   return (
     <section className="section my-knowledge">

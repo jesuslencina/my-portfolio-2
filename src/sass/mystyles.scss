@@ -30,6 +30,7 @@ $input-shadow: none;
 $title-color: $turquoise;
 $section-padding: 32px;
 $hero-body-padding-large: 10.5rem;
+$modal-background-background-color: rgba(190, 190, 190, 0.739);
 
 // Import only what you need from Bulma
 @import 'node_modules/bulma/sass/utilities/_all.sass';
@@ -45,7 +46,9 @@ $hero-body-padding-large: 10.5rem;
 @import 'node_modules/bulma/sass/layout/section.sass';
 @import 'node_modules/bulma/sass/components/card.sass';
 @import 'node_modules/bulma/sass/components/level.sass';
+@import 'node_modules/bulma/sass/components/modal.sass';
 @import 'node_modules/bulma/sass/helpers/typography.sass';
 @import 'node_modules/bulma/sass/helpers/color.sass';
 @import 'node_modules/bulma/sass/helpers/spacing.sass';
 @import 'node_modules/bulma/sass/grid/_all.sass';
+@import 'node_modules/bulma/sass/helpers/other.sass';

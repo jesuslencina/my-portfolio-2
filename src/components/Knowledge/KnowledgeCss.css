@@ -29,6 +29,7 @@
 
 .my-item:hover {
   transform: scale(1.25);
+  cursor: pointer;
 }
 
 @media screen and (max-width: 769px) {
