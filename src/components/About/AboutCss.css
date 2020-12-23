@@ -9,8 +9,13 @@
   text-align: center;
 }
 
-.pic {
-  width: 25vw;
+.pics {
+  width: 40vw;
+  transition: transform 0.2s;
+}
+
+.pics:hover {
+  transform: scale(1.05);
 }
 
 .my-text {

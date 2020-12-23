@@ -1,0 +1,42 @@
+.my-knowledge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.my-item {
+  padding: 1rem;
+  margin: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.my-item img {
+  width: 15rem;
+}
+
+.my-item p {
+  padding-top: 1rem;
+}
+
+.my-item:hover {
+  transform: scale(1.25);
+}
+
+@media screen and (max-width: 769px) {
+  .my-item {
+    margin-top: 2rem;
+  }
+
+  .my-item img {
+    width: 12rem;
+  }
+}
