@@ -32,6 +32,15 @@
   cursor: pointer;
 }
 
+.my-modal.is-active section {
+  display: flex;
+  align-items: center;
+}
+
+.my-modal.is-active section img {
+  width: 20%;
+}
+
 @media screen and (max-width: 769px) {
   .my-container {
     flex-direction: column;

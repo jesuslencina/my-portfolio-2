@@ -1,10 +1,17 @@
 import React, { useState } from 'react';
+import disableScroll from 'disable-scroll';
 
 function KnowledgeItem(props) {
   const [modal, setModal] = useState('');
 
   const handleModal = () => {
-    modal === '' ? setModal('is-active') : setModal('');
+    if (modal === '') {
+      setModal('is-active');
+      disableScroll.on();
+    } else {
+      setModal('');
+      disableScroll.off();
+    }
   };
 
   return (
@@ -16,12 +23,15 @@ function KnowledgeItem(props) {
         </div>
       </div>
 
-      <div className={`modal ${modal}`}>
+      <div className={`modal my-modal ${modal}`}>
         <div className="modal-background"></div>
         <div className="modal-card">
-          <section className="modal-card-body">
+          <section className="modal-card-body ">
             <img src={props.img} alt={props.name} />
-            <p>{props.desc}</p>
+            <div className="ml-3">
+              <h4 className="title mb-0">{props.name}</h4>
+              <p>{props.desc}</p>
+            </div>
           </section>
 
           <button className="button is-success" onClick={handleModal}>
