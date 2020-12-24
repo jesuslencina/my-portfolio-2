@@ -8,7 +8,7 @@ function Hero() {
   return (
     <div className="hero is-large">
       <img
-        src="public-assets/background.jpg"
+        src="public-assets/background-pattern.jpg"
         alt="background"
         className="background"
       />
