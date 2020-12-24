@@ -1,0 +1,30 @@
+.my-project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.2s;
+}
+
+.my-project:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.my-project .made-for {
+  display: flex;
+  align-items: center;
+}
+
+.my-project .made-for img {
+  width: 24px;
+  margin: 0 0.5rem;
+}
+
+.my-project p {
+  margin-top: 1rem;
+}
+
+.my-project b {
+  font-style: italic;
+  color: #59beb6;
+}

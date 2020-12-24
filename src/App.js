@@ -7,6 +7,7 @@ import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Knowledge from './components/Knowledge/Knowledge';
 import Education from './components/History/Education';
+import Projects from './components/Projects/Projects';
 
 //FUNCTION
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <About />
       <Knowledge />
       <Education />
+      <Projects />
     </div>
   );
 }
