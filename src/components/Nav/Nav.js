@@ -44,6 +44,10 @@ function Nav() {
           <a href="#education" className="navbar-item">
             Education
           </a>
+
+          <a href="#projects" className="navbar-item">
+            Projects
+          </a>
         </div>
       </div>
     </nav>
