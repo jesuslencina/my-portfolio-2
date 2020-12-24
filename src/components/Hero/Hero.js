@@ -6,7 +6,7 @@ import me from '../../assets/me.png';
 
 function Hero() {
   return (
-    <div className="hero is-large">
+    <div className="hero is-large" id="hero">
       <img
         src="public-assets/background-pattern.png"
         alt="background"

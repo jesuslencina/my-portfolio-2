@@ -13,7 +13,7 @@ function Nav() {
       role="navigation"
       aria-label="main navigation">
       <div className="navbar-brand">
-        <a className="navbar-item" href="#about">
+        <a className="navbar-item" href="#hero">
           <img src={favicon} width="26" height="26" alt="Icon" />
         </a>
         <p class="navbar-item name">Jesus Lencina</p>
