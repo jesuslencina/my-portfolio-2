@@ -1,5 +1,3 @@
-import Projects from './Projects';
-
 function ProjectItem(props) {
   const handleRedirect = () => {
     window.open(props.link);
