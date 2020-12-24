@@ -3,12 +3,15 @@ import React from 'react';
 import './HeroCss.css';
 
 import me from '../../assets/me.png';
-import background from '../../assets/background.jpg';
 
 function Hero() {
   return (
     <div className="hero is-large">
-      <img src={background} alt="background" className="background" />
+      <img
+        src="public-assets/background-jpg"
+        alt="background"
+        className="background"
+      />
       <div className="hero-body">
         <div className="container is-fluid my-container">
           <div>
