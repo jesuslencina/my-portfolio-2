@@ -10,7 +10,7 @@ function Hero() {
       <img
         src="public-assets/background-pattern.png"
         alt="background"
-        className="background"
+        className="my-background"
       />
       <div className="hero-body">
         <div className="container is-fluid my-hero-container">

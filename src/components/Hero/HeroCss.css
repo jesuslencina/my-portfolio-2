@@ -1,4 +1,4 @@
-.background {
+.my-background {
   position: absolute;
   top: 0;
   z-index: -1;
@@ -30,7 +30,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-  .background {
+  .my-background {
     display: none;
   }
 
