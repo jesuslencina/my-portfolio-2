@@ -40,6 +40,10 @@ function Nav() {
           <a href="#skills" className="navbar-item">
             Skills
           </a>
+
+          <a href="#education" className="navbar-item">
+            Education
+          </a>
         </div>
       </div>
     </nav>

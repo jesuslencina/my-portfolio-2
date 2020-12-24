@@ -15,7 +15,7 @@ function Education() {
   ));
 
   return (
-    <section className="section my-section" id="about">
+    <section className="section my-section" id="education">
       <h2 className="title is-size-1 has-text-white">EDUCATION</h2>
       <div className="container">{educationList}</div>
     </section>
