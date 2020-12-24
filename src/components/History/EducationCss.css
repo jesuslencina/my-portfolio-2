@@ -1,0 +1,10 @@
+.my-edu-item img {
+  padding: 1rem;
+  width: 15%;
+}
+
+@media screen and (max-width: 769px) {
+  .my-edu-item img {
+    width: 50%;
+  }
+}

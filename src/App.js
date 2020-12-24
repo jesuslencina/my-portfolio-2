@@ -6,6 +6,7 @@ import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
 import Knowledge from './components/Knowledge/Knowledge';
+import Education from './components/History/Education';
 
 //FUNCTION
 function App() {
@@ -15,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Knowledge />
+      <Education />
     </div>
   );
 }
