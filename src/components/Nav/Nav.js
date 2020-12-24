@@ -48,6 +48,10 @@ function Nav() {
           <a href="#projects" className="navbar-item">
             Projects
           </a>
+
+          <a href="#contact" className="navbar-item">
+            Contact
+          </a>
         </div>
       </div>
     </nav>
