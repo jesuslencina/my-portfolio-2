@@ -9,6 +9,7 @@ import Knowledge from './components/Knowledge/Knowledge';
 import Education from './components/History/Education';
 import Projects from './components/Projects/Projects';
 import Contact from './components/Contact/Contact';
+import Credits from './components/Credits/Credits';
 
 //FUNCTION
 function App() {
@@ -21,6 +22,7 @@ function App() {
       <Education />
       <Projects />
       <Contact />
+      <Credits />
     </div>
   );
 }
