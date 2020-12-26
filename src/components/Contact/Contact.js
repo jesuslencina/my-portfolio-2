@@ -1,14 +1,23 @@
+import { useContext } from 'react';
+
+import { Context } from '../Context';
+
+import texts from './contactTexts';
+
 import './ContactCss.css';
 
 function Contact() {
+  const { lang } = useContext(Context);
+
   return (
     <section className="section my-section" id="contact">
       <div className="my-text">
-        <h2 className="title is-size-1 has-text-white">CONTACT</h2>
+        <h2 className="title is-size-1 has-text-white">
+          {texts[lang].contact}
+        </h2>
 
         <p className="has-text-white is-size-4">
-          If you want to reach me out, feel free to send me a message on
-          LinkedIn! <br /> Click the icon below to do so
+          {texts[lang].part1} <br /> {texts[lang].part2}
         </p>
 
         <img
