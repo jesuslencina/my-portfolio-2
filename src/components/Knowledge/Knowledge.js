@@ -24,7 +24,7 @@ function Knowledge() {
     />
   ));
 
-  const langList = languages.map((item) => (
+  const langList = languages[lang].map((item) => (
     <KnowledgeItem
       key={item.id}
       name={item.name}

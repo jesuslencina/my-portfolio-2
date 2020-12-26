@@ -83,28 +83,55 @@ export const coding = {
   ],
 };
 
-export const languages = [
-  {
-    id: 1,
-    name: 'SPANISH',
-    img: 'public-assets/flags/argentina.png',
-    desc:
-      'My native language. I speak it since I was born, and I kinda like it',
-  },
+export const languages = {
+  1: [
+    {
+      id: 1,
+      name: 'SPANISH',
+      img: 'public-assets/flags/argentina.png',
+      desc:
+        'My native language. I speak it since I was born, and I kinda like it',
+    },
 
-  {
-    id: 2,
-    name: 'ENGLISH',
-    img: 'public-assets/flags/usa.png',
-    desc:
-      'My secondary language, which I speak since I was very young. I consider myself really fluent at it, and my proficiency is between C1 and C2. Became extremely good at it thanks for the UNC and the internet.',
-  },
+    {
+      id: 2,
+      name: 'ENGLISH',
+      img: 'public-assets/flags/usa.png',
+      desc:
+        'My secondary language, which I speak since I was very young. I consider myself really fluent at it, and my proficiency is between C1 and C2. Became extremely good at it thanks for the UNC and the internet.',
+    },
 
-  {
-    id: 3,
-    name: 'FRENCH',
-    img: 'public-assets/flags/france.png',
-    desc:
-      'My third language. I do not speak it that much, but my level is fairly good, intermediate I would say. Learnt it at the UNC',
-  },
-];
+    {
+      id: 3,
+      name: 'FRENCH',
+      img: 'public-assets/flags/france.png',
+      desc:
+        'My third language. I do not speak it that much, but my level is fairly good, intermediate I would say. Learnt it at the UNC',
+    },
+  ],
+
+  2: [
+    {
+      id: 1,
+      name: 'ESPAÑOL',
+      img: 'public-assets/flags/argentina.png',
+      desc: 'Mi idioma nativo. Lo hablo desde que nací, y me gusta un poco.',
+    },
+
+    {
+      id: 2,
+      name: 'INGLÉS',
+      img: 'public-assets/flags/usa.png',
+      desc:
+        'Mi idioma secundario, el cual hablo desde que era chico. Me considero muy fluído en él, y mi nivel según el marco europeo está entre C1 y C2. Me perfeccioné mucho gracias a la UNC y el internet.',
+    },
+
+    {
+      id: 3,
+      name: 'FRANCÉS',
+      img: 'public-assets/flags/france.png',
+      desc:
+        'Mi tercer idioma. No lo hablo mucho, pero mi nivel es bastante bueno, diría que intermedio. Lo aprendí en la UNC.',
+    },
+  ],
+};
