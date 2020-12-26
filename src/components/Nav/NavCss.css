@@ -12,3 +12,15 @@
 .my-burger:focus {
   outline: none;
 }
+
+.switch-button {
+  margin: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-flag {
+  width: 24px;
+  margin-right: 0.25rem;
+}

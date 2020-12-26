@@ -2,6 +2,7 @@
 import './css/mystyles.css';
 
 //COMPONENTS
+import { DataProvider } from './components/Context';
 import Nav from './components/Nav/Nav';
 import Hero from './components/Hero/Hero';
 import About from './components/About/About';
@@ -15,14 +16,16 @@ import Credits from './components/Credits/Credits';
 function App() {
   return (
     <div className="App">
-      <Nav />
-      <Hero />
-      <About />
-      <Knowledge />
-      <Education />
-      <Projects />
-      <Contact />
-      <Credits />
+      <DataProvider>
+        <Nav />
+        <Hero />
+        <About />
+        <Knowledge />
+        <Education />
+        <Projects />
+        <Contact />
+        <Credits />
+      </DataProvider>
     </div>
   );
 }
