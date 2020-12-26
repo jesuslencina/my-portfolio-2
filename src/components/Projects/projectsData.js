@@ -18,7 +18,7 @@ const projects = [
     desc:
       'A fictionary site to browse and filter hotels, taking into account many parameters. My first app ever made with React.',
     link: 'https://divago-jesus.netlify.app/',
-    used: ['REACT', 'MOMENTJS'],
+    used: ['REACT', 'MOMENTJS', 'STYLED-COMPONENTS'],
   },
 
   {
