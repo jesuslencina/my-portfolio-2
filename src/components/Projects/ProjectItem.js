@@ -3,6 +3,10 @@ function ProjectItem(props) {
     window.open(props.link);
   };
 
+  const usedList = props.used.map((tag) => {
+    return <span class="tag ml-1">{tag}</span>;
+  });
+
   return (
     <div className="card my-project" onClick={handleRedirect}>
       <div className="card-image">
@@ -16,6 +20,7 @@ function ProjectItem(props) {
           <i>Made for:</i>
           <img src={props.madeFor} alt="Made for this entity" />
         </div>
+        <div className="mt-3">Core technologies: {usedList}</div>
         <p>{props.desc}</p>
         <b>Click on the item to visit the project's site!</b>
       </div>

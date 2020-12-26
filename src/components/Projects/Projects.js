@@ -12,6 +12,7 @@ function Projects() {
       madeFor={item.madeFor}
       desc={item.desc}
       link={item.link}
+      used={item.used}
     />
   ));
 

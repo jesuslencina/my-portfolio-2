@@ -32,6 +32,6 @@
 
 @media screen and (max-width: 769px) {
   .my-project {
-    margin: 1rem 2rem !important;
+    margin: 1rem 0.025rem !important;
   }
 }
