@@ -4,7 +4,15 @@ import './AboutCss.css';
 
 import pics from '../../assets/pics.png';
 
+import { useContext } from 'react';
+
+import { Context } from '../Context';
+
+import texts from './aboutTexts';
+
 function About() {
+  const { lang } = useContext(Context);
+
   return (
     <section className="section my-section" id="about">
       <figure class="image is-16by9">
@@ -16,14 +24,9 @@ function About() {
       </figure>
 
       <div className="my-text">
-        <h2 className="title is-size-1 has-text-white">WHO AM I?</h2>
+        <h2 className="title is-size-1 has-text-white">{texts[lang].whoami}</h2>
 
-        <p className="has-text-white is-size-4">
-          Hey there! My name is Jesus, and I'm a trainee web developer. I'm 19
-          years old, and I live in Córdoba, Argentina. Apart from coding, my
-          passions are learning languages, taking photographs, and looking after
-          my pets. Nice to meet you!
-        </p>
+        <p className="has-text-white is-size-4">{texts[lang].about}</p>
       </div>
     </section>
   );

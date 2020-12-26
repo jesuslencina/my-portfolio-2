@@ -62,12 +62,13 @@ function Nav() {
           <a href="#contact" className="navbar-item">
             {texts[lang].contact}
           </a>
-          <button className="navbar-item button is-primary switch-button">
+          <button
+            onClick={switchLang}
+            className="navbar-item button is-primary switch-button">
             <img
               className="nav-flag"
               src={texts[lang].flag}
               alt={texts[lang].language}
-              onClick={switchLang}
             />
             {texts[lang].language}
           </button>
