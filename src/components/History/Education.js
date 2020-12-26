@@ -1,10 +1,18 @@
+import { useContext } from 'react';
+
+import { Context } from '../Context';
+
+import texts from './educationTexts';
+
 import education from './educationData';
 import EducationItem from './EducationItem';
 
 import './EducationCss.css';
 
 function Education() {
-  const educationList = education.map((item) => (
+  const { lang } = useContext(Context);
+
+  const educationList = education[lang].map((item) => (
     <EducationItem
       key={item.id}
       img={item.img}
@@ -16,7 +24,9 @@ function Education() {
 
   return (
     <section className="section my-section" id="education">
-      <h2 className="title is-size-1 has-text-white">EDUCATION</h2>
+      <h2 className="title is-size-1 has-text-white">
+        {texts[lang].education}
+      </h2>
       <div className="container">{educationList}</div>
     </section>
   );
