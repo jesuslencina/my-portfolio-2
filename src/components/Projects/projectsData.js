@@ -5,7 +5,7 @@ const projects = [
     madeFor: 'public-assets/academic/acamica.jpg',
     img: 'public-assets/projects/gifos.png',
     desc:
-      'A fully-featured GIF browser built in vanilla javascript. Uses the GIPHY API. It even allows recording and uploading GIFS from a webcam. It was really hard to make!',
+      'A fully-featured GIF browser built in vanilla javascript. Uses the GIPHY API. It even allows recording and uploading GIFS from a webcam. Also features a dark mode!',
     link: 'https://gifos-jesus.netlify.app/',
   },
 

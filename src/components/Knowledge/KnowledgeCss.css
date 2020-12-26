@@ -53,4 +53,13 @@
   .my-item img {
     width: 12rem;
   }
+
+  .my-modal.is-active section {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .my-modal.is-active section img {
+    width: 40%;
+  }
 }

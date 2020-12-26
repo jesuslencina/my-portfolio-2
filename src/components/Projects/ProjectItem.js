@@ -4,7 +4,7 @@ function ProjectItem(props) {
   };
 
   return (
-    <div className="card m-6 my-project" onClick={handleRedirect}>
+    <div className="card my-project" onClick={handleRedirect}>
       <div className="card-image">
         <figure className="image is-4by3">
           <img src={props.img} alt={props.name} />

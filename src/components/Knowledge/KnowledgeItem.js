@@ -24,7 +24,7 @@ function KnowledgeItem(props) {
       </div>
 
       <div className={`modal my-modal ${modal}`}>
-        <div className="modal-background"></div>
+        <div className="modal-background" onClick={handleModal}></div>
         <div className="modal-card">
           <section className="modal-card-body ">
             <img src={props.img} alt={props.name} />
