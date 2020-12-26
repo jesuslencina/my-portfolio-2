@@ -1,10 +1,18 @@
 import projects from './projectsData';
 import ProjectItem from './ProjectItem';
 
+import { useContext } from 'react';
+
+import { Context } from '../Context';
+
+import texts from './projectTexts';
+
 import './ProjectCss.css';
 
 function Projects() {
-  const projectList = projects.map((item) => (
+  const { lang } = useContext(Context);
+
+  const projectList = projects[lang].map((item) => (
     <ProjectItem
       key={item.id}
       name={item.name}
@@ -18,7 +26,7 @@ function Projects() {
 
   return (
     <section className="section my-knowledge" id="projects">
-      <h2 className="title is-size-1">PROJECTS</h2>
+      <h2 className="title is-size-1">{texts[lang].projects}</h2>
       <div className="container">{projectList}</div>
     </section>
   );

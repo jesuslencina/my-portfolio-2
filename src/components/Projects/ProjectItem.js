@@ -1,4 +1,12 @@
+import { useContext } from 'react';
+
+import { Context } from '../Context';
+
+import texts from './projectTexts';
+
 function ProjectItem(props) {
+  const { lang } = useContext(Context);
+
   const handleRedirect = () => {
     window.open(props.link);
   };
@@ -17,12 +25,14 @@ function ProjectItem(props) {
       <div class="card-content">
         <h4 className="title">{props.name}</h4>
         <div className="made-for">
-          <i>Made for:</i>
+          <i>{texts[lang].madefor}</i>
           <img src={props.madeFor} alt="Made for this entity" />
         </div>
-        <div className="mt-3">Core technologies: {usedList}</div>
+        <div className="mt-3">
+          {texts[lang].core} {usedList}
+        </div>
         <p>{props.desc}</p>
-        <b>Click on the item to visit the project's site!</b>
+        <b>{texts[lang].instructions}</b>
       </div>
     </div>
   );
