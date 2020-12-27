@@ -1,12 +1,12 @@
 import React from 'react';
 
-import { useContext } from 'react';
+import { useContext, useState } from 'react';
 
 import { Context } from '../Context';
 
 import texts from './knowledgeTexts';
 
-import { coding, languages } from './knowledgeData';
+import { coding, languages, more } from './knowledgeData';
 
 import KnowledgeItem from './KnowledgeItem';
 
@@ -14,6 +14,12 @@ import './KnowledgeCss.css';
 
 function Knowledge() {
   const { lang } = useContext(Context);
+
+  const [vmore, setVmore] = useState(false);
+
+  const handleVmore = () => {
+    vmore ? setVmore(false) : setVmore(true);
+  };
 
   const codingList = coding[lang].map((item) => (
     <KnowledgeItem
@@ -25,6 +31,15 @@ function Knowledge() {
   ));
 
   const langList = languages[lang].map((item) => (
+    <KnowledgeItem
+      key={item.id}
+      name={item.name}
+      img={item.img}
+      desc={item.desc}
+    />
+  ));
+
+  const moreList = more[lang].map((item) => (
     <KnowledgeItem
       key={item.id}
       name={item.name}
@@ -46,6 +61,20 @@ function Knowledge() {
       <div className="tile tile is-ancestor">
         <div className="tile is-parent my-container">{langList}</div>
       </div>
+
+      <button onClick={handleVmore} class="button is-primary">
+        {!vmore ? texts[lang].viewmore : texts[lang].hidemore}
+      </button>
+
+      {vmore ? (
+        <>
+          <div className="tile tile is-ancestor">
+            <div className="tile is-parent my-container">{moreList}</div>
+          </div>
+        </>
+      ) : (
+        ''
+      )}
     </section>
   );
 }

@@ -135,3 +135,111 @@ export const languages = {
     },
   ],
 };
+
+export const more = {
+  1: [
+    {
+      id: 1,
+      name: 'Ubuntu',
+      img: 'public-assets/skills/ubuntu.png',
+      desc: 'My favorite Linux operative systems are those based on Ubuntu',
+    },
+    {
+      id: 2,
+      name: 'GIMP',
+      img: 'public-assets/skills/gimp.png',
+      desc:
+        "Used it for a long of time on both Linux and Windows. It's so far my favorite open-source editing tool",
+    },
+
+    {
+      id: 3,
+      name: 'Adobe PS',
+      img: 'public-assets/skills/photoshop.png',
+      desc: 'Really powerful image editing tool. Perfect for complex edits',
+    },
+
+    {
+      id: 4,
+      name: 'MS Word',
+      img: 'public-assets/skills/word.png',
+      desc:
+        'Really good for handling large documents. Using it a lot on college',
+    },
+
+    {
+      id: 5,
+      name: 'MS Powerpoint',
+      img: 'public-assets/skills/powerpoint.png',
+      desc: 'Doing neat presentations is really easy with this',
+    },
+
+    {
+      id: 6,
+      name: 'MS Excel',
+      img: 'public-assets/skills/excel.png',
+      desc: 'Probably my first approach to logic. Good for handling data',
+    },
+    {
+      id: 7,
+      name: 'Google Docs',
+      img: 'public-assets/skills/gdocs.png',
+      desc:
+        'Also using this a lot for college. Optimal for document collaboration',
+    },
+  ],
+
+  2: [
+    {
+      id: 1,
+      name: 'Ubuntu',
+      img: 'public-assets/skills/ubuntu.png',
+      desc: 'Mis sistemas operativos favoritos están basados en Ubuntu',
+    },
+    {
+      id: 2,
+      name: 'GIMP',
+      img: 'public-assets/skills/gimp.png',
+      desc:
+        'Lo usé por mucho tiempo en Linux y en Windows. Es hasta ahora mi herramienta de código abierto favorita',
+    },
+
+    {
+      id: 3,
+      name: 'Adobe PS',
+      img: 'public-assets/skills/photoshop.png',
+      desc:
+        'Herramienta muy poderosa, para hacer edición de imagenes compleja.',
+    },
+
+    {
+      id: 4,
+      name: 'MS Word',
+      img: 'public-assets/skills/word.png',
+      desc:
+        'Bastante bueno para manejar documentos grandes. Lo uso bastante en la universidad',
+    },
+
+    {
+      id: 5,
+      name: 'MS Powerpoint',
+      img: 'public-assets/skills/powerpoint.png',
+      desc: 'Hacer buenas presentaciones es muy fácil gracias a esto',
+    },
+
+    {
+      id: 6,
+      name: 'MS Excel',
+      img: 'public-assets/skills/excel.png',
+      desc:
+        'Probablemente mi primer acercamiento a la lógica. Bueno para manejar datos',
+    },
+    {
+      id: 7,
+      name: 'Google Docs',
+      img: 'public-assets/skills/gdocs.png',
+      desc:
+        'También lo uso mucho en la universidad. Óptimo para colaboración y compartido de documentos',
+    },
+  ],
+};

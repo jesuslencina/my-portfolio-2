@@ -4,6 +4,8 @@ const texts = {
     instructions: 'Click on each item to read a brief description!',
     coding: 'Coding',
     languages: 'Languages',
+    viewmore: 'VIEW MORE SKILLS',
+    hidemore: 'HIDE EXTRA SKILLS',
   },
 
   2: {
@@ -11,6 +13,8 @@ const texts = {
     instructions: 'Hacé click en cada item para leer una breve descripción!',
     coding: 'Codeo',
     languages: 'Idiomas',
+    viewmore: 'VER MÁS HABILIDADES',
+    hidemore: 'ESCONDER',
   },
 };
 
