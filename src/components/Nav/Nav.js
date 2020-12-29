@@ -17,6 +17,10 @@ function Nav() {
     lang === 1 ? setLang(2) : setLang(1);
   };
 
+  const handleBurger = () => {
+    burger === '' ? setBurger('is-active') : setBurger('');
+  };
+
   return (
     <nav
       className="navbar is-fixed-top"
@@ -32,9 +36,7 @@ function Nav() {
           className={`navbar-burger my-burger ${burger}`}
           aria-label="menu"
           aria-expanded="false"
-          onClick={() =>
-            burger === '' ? setBurger('is-active') : setBurger('')
-          }
+          onClick={handleBurger}
           data-target="navbarBasicExample">
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -44,22 +46,22 @@ function Nav() {
 
       <div className={`navbar-menu ${burger}`}>
         <div className="navbar-end">
-          <a href="#about" className="navbar-item">
+          <a href="#about" onClick={handleBurger} className="navbar-item">
             {texts[lang].about}
           </a>
-          <a href="#skills" className="navbar-item">
+          <a href="#skills" onClick={handleBurger} className="navbar-item">
             {texts[lang].skills}
           </a>
 
-          <a href="#education" className="navbar-item">
+          <a href="#education" onClick={handleBurger} className="navbar-item">
             {texts[lang].education}
           </a>
 
-          <a href="#projects" className="navbar-item">
+          <a href="#projects" onClick={handleBurger} className="navbar-item">
             {texts[lang].projects}
           </a>
 
-          <a href="#contact" className="navbar-item">
+          <a href="#contact" onClick={handleBurger} className="navbar-item">
             {texts[lang].contact}
           </a>
           <button
