@@ -30,8 +30,19 @@
   color: #59beb6;
 }
 
+.my-project-list {
+  margin: 1rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 769px) {
   .my-project {
     margin: 1rem 0.025rem !important;
+  }
+
+  .my-project-list {
+    margin: 0;
+    grid-template-columns: 1fr;
   }
 }

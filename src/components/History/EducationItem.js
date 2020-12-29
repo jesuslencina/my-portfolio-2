@@ -1,6 +1,6 @@
 function EducationItem(props) {
   return (
-    <div className="card p-4 m-4">
+    <div className="card p-4 m-4 my-edu-card">
       <div className="my-edu-item">
         <div>
           <figure className="image is-24x24">

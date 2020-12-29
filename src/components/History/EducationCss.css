@@ -3,8 +3,27 @@
   width: 15%;
 }
 
+.my-edu-card {
+  transition: transform 0.25s;
+}
+
+.my-edu-card:hover {
+  transform: scale(1.05);
+}
+
+.my-edu-list {
+  margin: 1rem 5rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 @media screen and (max-width: 769px) {
   .my-edu-item img {
     width: 50%;
+  }
+
+  .my-edu-list {
+    margin: 0;
+    grid-template-columns: 1fr;
   }
 }

@@ -27,7 +27,7 @@ function Projects() {
   return (
     <section className="section my-knowledge" id="projects">
       <h2 className="title is-size-1">{texts[lang].projects}</h2>
-      <div className="container">{projectList}</div>
+      <div className="my-project-list">{projectList}</div>
     </section>
   );
 }

@@ -24,10 +24,10 @@ function Education() {
 
   return (
     <section className="section my-section" id="education">
-      <h2 className="title is-size-1 has-text-white">
+      <h2 className="title is-size-1 has-text-white ">
         {texts[lang].education}
       </h2>
-      <div className="container">{educationList}</div>
+      <div className="my-edu-list">{educationList}</div>
     </section>
   );
 }
