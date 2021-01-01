@@ -12,14 +12,15 @@ function Credits() {
       <a
         href="#credits"
         className="button is-primary is-size-4 mb-6"
-        onClick={handleCredits}>
+        onClick={handleCredits}
+      >
         {credits ? 'HIDE CREDITS' : 'SHOW CREDITS'}
       </a>
       {credits ? (
         <div className="container my-credits-container mb-6" id="credits">
           <h2 className="title is-size-1">CREDITS</h2>
           <p className="is-size-4">
-            Framework: <a href="https://reactjs.org/">React</a>
+            Built using: <a href="https://reactjs.org/">React</a>
           </p>
           <p className="is-size-4">
             CSS Framework: <a href="https://bulma.io/">Bulma</a>

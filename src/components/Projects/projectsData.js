@@ -13,6 +13,17 @@ const projects = {
 
     {
       id: 2,
+      name: 'Rewards Store',
+      madeFor: 'public-assets/academic/acamica.jpg',
+      img: 'public-assets/projects/rewards-store.png',
+      desc:
+        'This was the very last Acámica project. Based off an Aerolab Challenge, I built an online fictionary point-based shop, in which you can purchase items in exchange for coins. You also have the ability to redeem more points, and view the history of purchased products.',
+      link: 'https://jesuslencina.github.io/rewards-store-2/',
+      used: ['REACT', 'FETCH API', 'BULMA-CSS', 'ANIMATE-CSS'],
+    },
+
+    {
+      id: 3,
       name: 'Divago',
       madeFor: 'public-assets/academic/acamica.jpg',
       img: 'public-assets/projects/divago.png',
@@ -48,6 +59,17 @@ const projects = {
 
     {
       id: 2,
+      name: 'Rewards Store',
+      madeFor: 'public-assets/academic/acamica.jpg',
+      img: 'public-assets/projects/rewards-store.png',
+      desc:
+        'Mi último proyecto de Acámica. Se trata de una tienda de puntos online ficticia, en la cual se compran items a cambio de monedas. También se pueden canjear más puntos, y ver el historial de compras.',
+      link: 'https://jesuslencina.github.io/rewards-store-2/',
+      used: ['REACT', 'FETCH API', 'BULMA-CSS', 'ANIMATE-CSS'],
+    },
+
+    {
+      id: 3,
       name: 'Divago',
       madeFor: 'public-assets/academic/acamica.jpg',
       img: 'public-assets/projects/divago.png',
