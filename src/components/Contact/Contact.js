@@ -25,7 +25,7 @@ function Contact() {
   const { lang } = useContext(Context);
 
   return (
-    <StyledContact>
+    <StyledContact id="contact">
       <div className="my-text">
         <h2 className="title is-size-1 has-text-white">
           {texts[lang].contact}
