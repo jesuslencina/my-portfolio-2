@@ -1,6 +1,18 @@
 import { useState } from 'react';
 
-import './CreditsCss.css';
+import styled from 'styled-components';
+
+const StyledCredits = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+`;
 
 function Credits() {
   const [credits, setCredits] = useState(false);
@@ -8,7 +20,7 @@ function Credits() {
   const handleCredits = () => (credits ? setCredits(false) : setCredits(true));
 
   return (
-    <section className="my-credits">
+    <StyledCredits>
       <a
         href="#credits"
         className="button is-primary is-size-4 mb-6"
@@ -17,7 +29,7 @@ function Credits() {
         {credits ? 'HIDE CREDITS' : 'SHOW CREDITS'}
       </a>
       {credits ? (
-        <div className="container my-credits-container mb-6" id="credits">
+        <div className="container mb-6" id="credits">
           <h2 className="title is-size-1">CREDITS</h2>
           <p className="is-size-4">
             Built using: <a href="https://reactjs.org/">React</a>
@@ -47,7 +59,7 @@ function Credits() {
       ) : (
         ''
       )}
-    </section>
+    </StyledCredits>
   );
 }
 

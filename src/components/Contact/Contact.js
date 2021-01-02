@@ -1,16 +1,31 @@
+import styled from 'styled-components';
+
+import StyledSection from '../sectionTemplate';
+
 import { useContext } from 'react';
 
 import { Context } from '../Context';
 
 import texts from './contactTexts';
 
-import './ContactCss.css';
+const StyledContact = styled(StyledSection)`
+  img {
+    width: 100px;
+    margin-top: 5rem;
+    transition: transform 0.2s;
+  }
+
+  img:hover {
+    transform: scale(1.25) rotate(-20deg);
+    cursor: pointer;
+  }
+`;
 
 function Contact() {
   const { lang } = useContext(Context);
 
   return (
-    <section className="section my-section" id="contact">
+    <StyledContact>
       <div className="my-text">
         <h2 className="title is-size-1 has-text-white">
           {texts[lang].contact}
@@ -24,12 +39,11 @@ function Contact() {
           onClick={() =>
             window.open('https://www.linkedin.com/in/jesuslencina/')
           }
-          className="my-linkedin"
           src="public-assets/linkedin.png"
           alt="LinkedIn"
         />
       </div>
-    </section>
+    </StyledContact>
   );
 }
 
