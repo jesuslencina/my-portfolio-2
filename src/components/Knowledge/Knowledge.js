@@ -1,5 +1,7 @@
 import React from 'react';
 
+import styled from 'styled-components';
+
 import { useContext, useState } from 'react';
 
 import { Context } from '../Context';
@@ -10,7 +12,71 @@ import { coding, languages, more } from './knowledgeData';
 
 import KnowledgeItem from './KnowledgeItem';
 
-import './KnowledgeCss.css';
+const StyledKnowledge = styled.section`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .my-container {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .my-item {
+    padding: 1rem;
+    margin: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+  }
+
+  .my-item img {
+    width: 5rem;
+  }
+
+  .my-item p {
+    padding-top: 1rem;
+  }
+
+  .my-item:hover {
+    transform: scale(1.25);
+    cursor: pointer;
+  }
+
+  .my-modal.is-active section {
+    display: flex;
+    align-items: center;
+  }
+
+  .my-modal.is-active section img {
+    width: 20%;
+  }
+
+  @media screen and (max-width: 769px) {
+    .my-container {
+      flex-direction: column;
+    }
+
+    .my-item {
+      margin-top: 2rem;
+    }
+
+    .my-item img {
+      width: 12rem;
+    }
+
+    .my-modal.is-active section {
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .my-modal.is-active section img {
+      width: 40%;
+    }
+  }
+`;
 
 function Knowledge() {
   const { lang } = useContext(Context);
@@ -49,7 +115,7 @@ function Knowledge() {
   ));
 
   return (
-    <section className="section my-knowledge" id="skills">
+    <StyledKnowledge id="skills">
       <h2 className="title is-size-1">{texts[lang].skills}</h2>
       <p className="mb-3">{texts[lang].instructions}</p>
       <h3 className="subtitle is-size-3 mt-1">{texts[lang].coding}</h3>
@@ -75,7 +141,7 @@ function Knowledge() {
       ) : (
         ''
       )}
-    </section>
+    </StyledKnowledge>
   );
 }
 
