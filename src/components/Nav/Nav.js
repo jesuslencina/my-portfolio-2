@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
 
+import { Link, animateScroll as scroll } from 'react-scroll';
+
 import { Context } from '../Context';
 
 import texts from './navTexts';
@@ -28,7 +30,11 @@ function Nav() {
       aria-label="main navigation"
     >
       <div className="navbar-brand">
-        <a className="navbar-item" href="#hero">
+        <a
+          className="navbar-item"
+          href="#hero"
+          onClick={() => scroll.scrollToTop()}
+        >
           <img src={favicon} width="26" height="26" alt="Icon" />
         </a>
         <p class="navbar-item name"> {texts[lang].name}</p>
@@ -48,24 +54,71 @@ function Nav() {
 
       <div className={`navbar-menu ${burger}`}>
         <div className="navbar-end">
-          <a href="#about" onClick={handleBurger} className="navbar-item">
-            {texts[lang].about}
-          </a>
-          <a href="#skills" onClick={handleBurger} className="navbar-item">
-            {texts[lang].skills}
-          </a>
+          <Link
+            to="about"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="navbar-item"
+          >
+            <a href="#about" onClick={handleBurger}>
+              {texts[lang].about}
+            </a>
+          </Link>
 
-          <a href="#education" onClick={handleBurger} className="navbar-item">
-            {texts[lang].education}
-          </a>
+          <Link
+            to="skills"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="navbar-item"
+          >
+            <a href="#skills" onClick={handleBurger}>
+              {texts[lang].skills}
+            </a>
+          </Link>
 
-          <a href="#projects" onClick={handleBurger} className="navbar-item">
-            {texts[lang].projects}
-          </a>
+          <Link
+            to="education"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="navbar-item"
+          >
+            <a href="#education" onClick={handleBurger}>
+              {texts[lang].education}
+            </a>
+          </Link>
 
-          <a href="#contact" onClick={handleBurger} className="navbar-item">
-            {texts[lang].contact}
-          </a>
+          <Link
+            to="projects"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="navbar-item"
+          >
+            <a href="#projects" onClick={handleBurger}>
+              {texts[lang].projects}
+            </a>
+          </Link>
+
+          <Link
+            to="contact"
+            spy={true}
+            smooth={true}
+            offset={-70}
+            duration={500}
+            className="navbar-item"
+          >
+            <a href="#contact" onClick={handleBurger}>
+              {texts[lang].contact}
+            </a>
+          </Link>
+
           <button
             onClick={switchLang}
             className="navbar-item button is-primary switch-button"

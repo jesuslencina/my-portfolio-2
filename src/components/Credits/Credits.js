@@ -43,6 +43,14 @@ function Credits() {
               Disable scroll
             </a>
           </p>
+
+          <p className="is-size-4">
+            Smooth scroll:{' '}
+            <a href="https://github.com/ganderzz/react-scroll-to">
+              React Scroll To
+            </a>
+          </p>
+
           <p className="is-size-4">
             Pattern background: <a href="https://patternico.com/">Patternico</a>
           </p>

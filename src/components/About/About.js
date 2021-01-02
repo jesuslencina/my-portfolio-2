@@ -42,8 +42,12 @@ function About() {
   const { lang } = useContext(Context);
 
   return (
-    <StyledAbout id="about">
-      <img src={pics} alt="Several pictures of my pets (and one of me)" />
+    <StyledAbout>
+      <img
+        id="about"
+        src={pics}
+        alt="Several pictures of my pets (and one of me)"
+      />
 
       <div>
         <h2 className="title is-size-1 has-text-white">{texts[lang].whoami}</h2>
