@@ -6,7 +6,7 @@ import texts from './navTexts';
 
 import './NavCss.css';
 
-import favicon from '../../assets/icons/other/favicon.png';
+import favicon from '../../assets/favicon.png';
 
 function Nav() {
   const { lang, setLang } = useContext(Context);
@@ -25,7 +25,8 @@ function Nav() {
     <nav
       className="navbar is-fixed-top"
       role="navigation"
-      aria-label="main navigation">
+      aria-label="main navigation"
+    >
       <div className="navbar-brand">
         <a className="navbar-item" href="#hero">
           <img src={favicon} width="26" height="26" alt="Icon" />
@@ -37,7 +38,8 @@ function Nav() {
           aria-label="menu"
           aria-expanded="false"
           onClick={handleBurger}
-          data-target="navbarBasicExample">
+          data-target="navbarBasicExample"
+        >
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
           <span aria-hidden="true"></span>
@@ -66,7 +68,8 @@ function Nav() {
           </a>
           <button
             onClick={switchLang}
-            className="navbar-item button is-primary switch-button">
+            className="navbar-item button is-primary switch-button"
+          >
             <img
               className="nav-flag"
               src={texts[lang].flag}
