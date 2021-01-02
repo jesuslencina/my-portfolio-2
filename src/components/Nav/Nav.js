@@ -62,7 +62,11 @@ function Nav() {
             duration={500}
             className="navbar-item"
           >
-            <a href="#about" onClick={handleBurger}>
+            <a
+              href="#about"
+              className="has-text-primary"
+              onClick={handleBurger}
+            >
               {texts[lang].about}
             </a>
           </Link>
@@ -75,7 +79,11 @@ function Nav() {
             duration={500}
             className="navbar-item"
           >
-            <a href="#skills" onClick={handleBurger}>
+            <a
+              href="#skills"
+              className="has-text-primary"
+              onClick={handleBurger}
+            >
               {texts[lang].skills}
             </a>
           </Link>
@@ -88,7 +96,11 @@ function Nav() {
             duration={500}
             className="navbar-item"
           >
-            <a href="#education" onClick={handleBurger}>
+            <a
+              href="#education"
+              className="has-text-primary"
+              onClick={handleBurger}
+            >
               {texts[lang].education}
             </a>
           </Link>
@@ -101,7 +113,11 @@ function Nav() {
             duration={500}
             className="navbar-item"
           >
-            <a href="#projects" onClick={handleBurger}>
+            <a
+              href="#projects"
+              className="has-text-primary"
+              onClick={handleBurger}
+            >
               {texts[lang].projects}
             </a>
           </Link>
@@ -114,7 +130,11 @@ function Nav() {
             duration={500}
             className="navbar-item"
           >
-            <a href="#contact" onClick={handleBurger}>
+            <a
+              href="#contact"
+              className="has-text-primary"
+              onClick={handleBurger}
+            >
               {texts[lang].contact}
             </a>
           </Link>
