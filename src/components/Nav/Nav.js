@@ -4,9 +4,9 @@ import { Context } from '../Context';
 
 import texts from './navTexts';
 
-import './NavCss.css';
-
 import favicon from '../../assets/favicon.png';
+
+import './NavCss.css';
 
 function Nav() {
   const { lang, setLang } = useContext(Context);
