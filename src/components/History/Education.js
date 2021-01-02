@@ -57,8 +57,8 @@ function Education() {
   ));
 
   return (
-    <StyledEducation id="education">
-      <h2 className="title is-size-1 has-text-white ">
+    <StyledEducation>
+      <h2 className="title is-size-1 has-text-white" id="education">
         {texts[lang].education}
       </h2>
       <div className="my-edu-list">{educationList}</div>
