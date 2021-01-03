@@ -9,6 +9,7 @@ function EducationItem(props) {
           <h4 className="subtitle">{props.place}</h4>
         </div>
         <h3 className="title">{props.title}</h3>
+        <i>{props.status}</i>
         <p className="is-size-5">{props.desc}</p>
       </div>
     </div>

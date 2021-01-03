@@ -31,6 +31,10 @@ const StyledEducation = styled(StyledSection)`
     grid-template-columns: 1fr 1fr;
   }
 
+  .title {
+    margin-bottom: 0;
+  }
+
   @media screen and (max-width: 769px) {
     .my-edu-item img {
       width: 50%;
@@ -51,6 +55,7 @@ function Education() {
       key={item.id}
       img={item.img}
       place={item.place}
+      status={item.status}
       title={item.title}
       desc={item.desc}
     />
