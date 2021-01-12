@@ -1,5 +1,7 @@
 import React, { useState, useContext } from 'react';
 
+import styled from 'styled-components';
+
 import { Link, animateScroll as scroll } from 'react-scroll';
 
 import { Context } from '../Context';
@@ -8,7 +10,38 @@ import texts from './navTexts';
 
 import favicon from '../../assets/favicon.png';
 
-import './NavCss.css';
+const StyledNav = styled.nav`
+  .navbar-brand:hover {
+    cursor: pointer;
+  }
+
+  .name {
+    margin: 0;
+    padding: 0;
+    font-weight: 800;
+  }
+
+  .my-burger {
+    background-color: white;
+    border: none;
+  }
+
+  .my-burger:focus {
+    outline: none;
+  }
+
+  .switch-button {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav-flag {
+    width: 24px;
+    margin-right: 0.25rem;
+  }
+`;
 
 function Nav() {
   const { lang, setLang } = useContext(Context);
@@ -24,7 +57,7 @@ function Nav() {
   };
 
   return (
-    <nav
+    <StyledNav
       className="navbar is-fixed-top"
       role="navigation"
       aria-label="main navigation"
@@ -37,7 +70,10 @@ function Nav() {
         >
           <img src={favicon} width="26" height="26" alt="Icon" />
         </a>
-        <p class="navbar-item name"> {texts[lang].name}</p>
+        <p class="navbar-item name" onClick={() => scroll.scrollToTop()}>
+          {' '}
+          {texts[lang].name}
+        </p>
 
         <button
           className={`navbar-burger my-burger ${burger}`}
@@ -152,7 +188,7 @@ function Nav() {
           </button>
         </div>
       </div>
-    </nav>
+    </StyledNav>
   );
 }
 
