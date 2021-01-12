@@ -78,7 +78,7 @@ export const coding = {
       name: 'REACT',
       img: 'public-assets/skills/react.png',
       desc:
-        'No voy a decir que soy experto con él, pero lo estoy aprendiendo rápido. Aprendido en Acámica, perfeccionando en Coderhouse',
+        'No voy a decir que soy experto, pero lo estoy aprendiendo rápido. Aprendido en Acámica, perfeccionando en Coderhouse',
     },
   ],
 };
@@ -106,7 +106,7 @@ export const languages = {
       name: 'FRENCH',
       img: 'public-assets/flags/france.png',
       desc:
-        'My third language. I do not speak it that much, but my level is fairly good, intermediate I would say. Learnt it at the UNC',
+        'My third language. I do not speak it that much, but my level is fairly good, intermediate I would say. Learnt at the UNC',
     },
   ],
 

@@ -13,7 +13,7 @@ const education = {
     {
       id: 2,
       place: 'Acámica',
-      status: 'Finished since 2020',
+      status: 'Finished in 2020',
       title: 'Frontend Web Development',
       img: 'public-assets/academic/acamica.jpg',
       desc:
@@ -33,11 +33,11 @@ const education = {
     {
       id: 4,
       place: 'CESD',
-      status: 'Finished since 2018',
+      status: 'Finished in 2018',
       title: "Bachelor's degree in computing",
       img: 'public-assets/academic/cesd.png',
       desc:
-        "This is my high school, in which I've learnt all I need to know to become what I am today. I am extremely grateful for having had the chance to study here.",
+        "This is my high school, in which I've learnt all I needed to know to become what I am today. I am extremely grateful for having had the chance to study here.",
     },
   ],
 
