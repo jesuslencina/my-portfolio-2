@@ -38,6 +38,7 @@ const StyledKnowledge = styled.section`
 
   .my-item p {
     padding-top: 1rem;
+    text-align: center;
   }
 
   .my-item:hover {

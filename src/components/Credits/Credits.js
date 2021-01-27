@@ -32,7 +32,8 @@ function Credits() {
         <div className="container mb-6" id="credits">
           <h2 className="title is-size-1">CREDITS</h2>
           <p className="is-size-4">
-            Built using: <a href="https://reactjs.org/">React</a>
+            Built using: <a href="https://reactjs.org/">React</a> +{' '}
+            <a href="https://create-react-app.dev/">create-react-app</a>
           </p>
           <p className="is-size-4">
             CSS Framework: <a href="https://bulma.io/">Bulma</a>

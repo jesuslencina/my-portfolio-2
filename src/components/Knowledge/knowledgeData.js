@@ -36,8 +36,15 @@ export const coding = {
       id: 5,
       name: 'REACT',
       img: 'public-assets/skills/react.png',
+      desc: 'Learnt in Acámica, becoming better at it in Coderhouse',
+    },
+
+    {
+      id: 6,
+      name: 'STYLED COMPS',
+      img: 'public-assets/skills/styled-comps.png',
       desc:
-        "I won't say I'm an expert with this one, but I'm quickly getting used to it! Learnt in Acámica, becoming better at it with Coderhouse",
+        'My favorite way of styling, mixing SCSS with JavaScript. Learnt by myself.',
     },
   ],
   2: [
@@ -77,8 +84,15 @@ export const coding = {
       id: 5,
       name: 'REACT',
       img: 'public-assets/skills/react.png',
+      desc: 'Aprendido en Acámica, perfeccionando en Coderhouse',
+    },
+
+    {
+      id: 6,
+      name: 'STYLED COMPS',
+      img: 'public-assets/skills/styled-comps.png',
       desc:
-        'No voy a decir que soy experto, pero lo estoy aprendiendo rápido. Aprendido en Acámica, perfeccionando en Coderhouse',
+        'Mi manera favorita de estilar componentes, mezclando SCSS con JavaScript. Aprendido por mi cuenta.',
     },
   ],
 };
