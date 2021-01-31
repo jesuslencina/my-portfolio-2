@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import disableScroll from 'disable-scroll';
+import ScrollAnimation from 'react-animate-on-scroll';
 
 function KnowledgeItem(props) {
   const [modal, setModal] = useState('');
@@ -16,12 +17,14 @@ function KnowledgeItem(props) {
 
   return (
     <>
-      <div className="tile is-parent" onClick={handleModal}>
-        <div className="tile is-child box my-item">
-          <img src={props.img} alt={props.name} />
-          <p>{props.name}</p>
+      <ScrollAnimation animateOnce animateIn="bounceIn">
+        <div className="tile is-parent" onClick={handleModal}>
+          <div className="tile is-child box my-item">
+            <img src={props.img} alt={props.name} />
+            <p>{props.name}</p>
+          </div>
         </div>
-      </div>
+      </ScrollAnimation>
 
       <div className={`modal my-modal ${modal}`}>
         <div className="modal-background" onClick={handleModal}></div>

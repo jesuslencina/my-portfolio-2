@@ -12,6 +12,10 @@ const StyledCredits = styled.section`
     flex-direction: column;
     align-items: center;
   }
+
+  @media screen and (max-width: 769px) {
+    display: none;
+  }
 `;
 
 function Credits() {
@@ -35,9 +39,18 @@ function Credits() {
             Built using: <a href="https://reactjs.org/">React</a> +{' '}
             <a href="https://create-react-app.dev/">create-react-app</a>
           </p>
+
           <p className="is-size-4">
             CSS Framework: <a href="https://bulma.io/">Bulma</a>
           </p>
+
+          <p className="is-size-4">
+            Animations: <a href="https://animate.style//">Animate.css</a> +{' '}
+            <a href="https://github.com/dbramwell/react-animate-on-scroll">
+              AnimateOnScroll
+            </a>
+          </p>
+
           <p className="is-size-4">
             Scroll lock:{' '}
             <a href="https://www.npmjs.com/package/disable-scroll">

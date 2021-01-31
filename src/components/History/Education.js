@@ -12,6 +12,8 @@ import education from './educationData';
 import EducationItem from './EducationItem';
 
 const StyledEducation = styled(StyledSection)`
+  animation-duration: 1.5s;
+
   .my-edu-item img {
     padding: 1rem;
     width: 15%;
@@ -19,6 +21,7 @@ const StyledEducation = styled(StyledSection)`
 
   .my-edu-card {
     transition: transform 0.25s;
+    height: 90%;
   }
 
   .my-edu-card:hover {
@@ -38,6 +41,10 @@ const StyledEducation = styled(StyledSection)`
   @media screen and (max-width: 769px) {
     .my-edu-item img {
       width: 50%;
+    }
+
+    .my-edu-card {
+      height: fit-content;
     }
 
     .my-edu-list {

@@ -1,6 +1,10 @@
 //CSS
 import './css/mystyles.css';
 
+//ANIMATE
+import '../node_modules/animate.css/animate.compat.css';
+import '../node_modules/animate.css/animate.min.css';
+
 //COMPONENTS
 import { DataProvider } from './components/Context';
 import Nav from './components/Nav/Nav';

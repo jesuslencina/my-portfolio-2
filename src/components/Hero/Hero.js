@@ -1,16 +1,18 @@
 import React from 'react';
 
-import styled from 'styled-components';
-
 import { useContext } from 'react';
 
 import { Context } from '../Context';
+
+import styled from 'styled-components';
 
 import texts from './heroTexts';
 
 import me from '../../assets/me.png';
 
 const StyledHero = styled.div`
+  animation-duration: 1.5s;
+
   .my-background {
     position: absolute;
     top: 0;
@@ -74,7 +76,7 @@ function Hero() {
   const { lang } = useContext(Context);
 
   return (
-    <StyledHero id="hero">
+    <StyledHero id="hero" className="animate__fadeIn">
       <img
         src="public-assets/background-pattern.png"
         alt="background"

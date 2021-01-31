@@ -2,6 +2,8 @@ import React from 'react';
 
 import styled from 'styled-components';
 
+import ScrollAnimation from 'react-animate-on-scroll';
+
 import StyledSection from '../sectionTemplate';
 
 import pics from '../../assets/pics.png';
@@ -13,6 +15,8 @@ import { Context } from '../Context';
 import texts from './aboutTexts';
 
 const StyledAbout = styled(StyledSection)`
+  animation-duration: 1.5s;
+
   img {
     width: 40vw;
     transition: transform 0.2s;
@@ -22,7 +26,7 @@ const StyledAbout = styled(StyledSection)`
     transform: scale(1.05);
   }
 
-  div {
+  .introduction {
     width: 50%;
   }
 
@@ -31,7 +35,7 @@ const StyledAbout = styled(StyledSection)`
       width: 80vw;
     }
 
-    div {
+    .introduction {
       width: 90%;
       font-size: 1.25rem;
     }
@@ -42,17 +46,20 @@ function About() {
   const { lang } = useContext(Context);
 
   return (
-    <StyledAbout>
+    <StyledAbout className="animate__fadeIn">
       <img
         id="about"
         src={pics}
         alt="Several pictures of my pets (and one of me)"
       />
 
-      <div>
-        <h2 className="title is-size-1 has-text-white">{texts[lang].whoami}</h2>
-
-        <p className="has-text-white is-size-4">{texts[lang].about}</p>
+      <div className="introduction">
+        <ScrollAnimation animateOnce animateIn="bounceIn">
+          <h2 className="title is-size-1 has-text-white">
+            {texts[lang].whoami}
+          </h2>
+          <p className="has-text-white is-size-4">{texts[lang].about}</p>
+        </ScrollAnimation>
       </div>
     </StyledAbout>
   );

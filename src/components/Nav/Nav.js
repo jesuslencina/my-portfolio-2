@@ -11,6 +11,8 @@ import texts from './navTexts';
 import favicon from '../../assets/favicon.png';
 
 const StyledNav = styled.nav`
+  animation-duration: 2s;
+
   .navbar-brand:hover {
     cursor: pointer;
   }
@@ -58,7 +60,7 @@ function Nav() {
 
   return (
     <StyledNav
-      className="navbar is-fixed-top"
+      className="navbar is-fixed-top animate__fadeInDown"
       role="navigation"
       aria-label="main navigation"
     >

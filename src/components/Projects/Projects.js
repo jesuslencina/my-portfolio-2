@@ -10,6 +10,8 @@ import { Context } from '../Context';
 import texts from './projectTexts';
 
 const StyledProjects = styled.section`
+  animation-duration: 1.5s;
+
   display: flex;
   flex-direction: column;
   align-items: center;
