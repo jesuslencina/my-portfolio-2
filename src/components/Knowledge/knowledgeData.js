@@ -41,7 +41,7 @@ export const coding = {
 
     {
       id: 6,
-      name: 'STYLED COMPS',
+      name: 'STYLED-C.',
       img: 'public-assets/skills/styled-comps.png',
       desc:
         'My favorite way of styling, mixing SCSS with JavaScript. Learnt by myself.',
@@ -89,7 +89,7 @@ export const coding = {
 
     {
       id: 6,
-      name: 'STYLED COMPS',
+      name: 'STYLED-C.',
       img: 'public-assets/skills/styled-comps.png',
       desc:
         'Mi manera favorita de estilar componentes, mezclando SCSS con JavaScript. Aprendido por mi cuenta.',

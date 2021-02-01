@@ -34,7 +34,7 @@ const projects = {
     },
 
     {
-      id: 3,
+      id: 4,
       name: 'Podcast channel',
       madeFor: 'public-assets/academic/acamica.jpg',
       img: 'public-assets/projects/podcast.png',
@@ -80,7 +80,7 @@ const projects = {
     },
 
     {
-      id: 3,
+      id: 4,
       name: 'Podcast channel',
       madeFor: 'public-assets/academic/acamica.jpg',
       img: 'public-assets/projects/podcast.png',

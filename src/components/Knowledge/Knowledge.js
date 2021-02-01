@@ -131,7 +131,7 @@ function Knowledge() {
         <div className="tile is-parent my-container">{langList}</div>
       </div>
 
-      <button onClick={handleVmore} class="button is-primary">
+      <button onClick={handleVmore} className="button is-primary">
         {!vmore ? texts[lang].viewmore : texts[lang].hidemore}
       </button>
 

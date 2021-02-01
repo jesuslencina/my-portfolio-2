@@ -72,7 +72,7 @@ function Nav() {
         >
           <img src={favicon} width="26" height="26" alt="Icon" />
         </a>
-        <p class="navbar-item name" onClick={() => scroll.scrollToTop()}>
+        <p className="navbar-item name" onClick={() => scroll.scrollToTop()}>
           {' '}
           {texts[lang].name}
         </p>
