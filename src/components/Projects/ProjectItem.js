@@ -19,7 +19,7 @@ function ProjectItem(props) {
 
   return (
     <ScrollAnimation animateOnce animateIn="bounceIn">
-      <div className="card my-project" onClick={handleRedirect}>
+      <div className="card my-project">
         <div className="card-image">
           <figure className="image is-4by3">
             <img src={props.img} alt={props.name} />
@@ -29,13 +29,23 @@ function ProjectItem(props) {
           <h4 className="title">{props.name}</h4>
           <div className="made-for">
             <i>{texts[lang].madefor}</i>
-            <img src={props.madeFor} alt="Made for this entity" />
+            {props.madeFor.includes('jpg') || props.madeFor.includes('png') ? (
+              <img src={props.madeFor} alt="Made for this entity" />
+            ) : (
+              <span>{props.madeFor}</span>
+            )}
           </div>
           <div className="mt-3">
             {texts[lang].core} {usedList}
           </div>
           <p>{props.desc}</p>
-          <b>{texts[lang].instructions}</b>
+
+          <button
+            onClick={handleRedirect}
+            className="navbar-item button is-primary switch-button"
+          >
+            {texts[lang].instructions}
+          </button>
         </div>
       </div>
     </ScrollAnimation>

@@ -6,7 +6,7 @@ const projects = {
       madeFor: 'public-assets/academic/acamica.jpg',
       img: 'public-assets/projects/gifos.png',
       desc:
-        'A fully-featured GIF browser built in vanilla javascript. Uses the GIPHY API. It even allows recording and uploading GIFS from a webcam. Also features a dark mode, and a mobile version!',
+        'A fully-featured GIF browser built in vanilla javascript. Uses the GIPHY API. It even allows recording and uploading GIFS from a webcam. Also features dark mode, and a mobile version!',
       link: 'https://gifos-jesus.netlify.app/',
       used: ['HTML', 'SASS', 'JAVASCRIPT', 'FETCH API'],
     },
@@ -43,6 +43,16 @@ const projects = {
       link: 'https://podcast-channel-jesus.netlify.app/',
       used: ['HTML', 'SASS'],
     },
+    {
+      id: 5,
+      name: 'Carousel',
+      madeFor: 'Scandiweb',
+      img: 'public-assets/projects/carousel.png',
+      desc:
+        'A challenge in which I had to configure React in Webpack from scratch, use dynamic and complex CSS, and also touch input.',
+      link: 'https://jesuslencina.github.io/Carousel/',
+      used: ['REACT', 'WEBPACK', 'STYLED COMPONENTS'],
+    },
   ],
 
   2: [
@@ -52,7 +62,7 @@ const projects = {
       madeFor: 'public-assets/academic/acamica.jpg',
       img: 'public-assets/projects/gifos.png',
       desc:
-        'Una navegador de GIFs hecho completamente en javascript vanilla. usa la API de GIPHY. Incluso permite grabar y subit GIFs desde la webcam. ¡También incluye modo nocturno, y una version mobile!',
+        'Un navegador de GIFs hecho completamente en javascript vanilla. usa la API de GIPHY. Incluso permite grabar y subit GIFs desde la webcam. ¡También incluye modo nocturno, y una version mobile!',
       link: 'https://gifos-jesus.netlify.app/',
       used: ['HTML', 'SASS', 'JAVASCRIPT', 'FETCH API'],
     },
@@ -88,6 +98,16 @@ const projects = {
         'Mi primer sitio. Hecho solo con HTML y SASS. Laparte más difícil fue hacer un menú hamburguesa solo con CSS. ¡Pero lo hice!',
       link: 'https://podcast-channel-jesus.netlify.app/',
       used: ['HTML', 'SASS'],
+    },
+    {
+      id: 5,
+      name: 'Carousel',
+      madeFor: 'Scandiweb',
+      img: 'public-assets/projects/carousel.png',
+      desc:
+        'Un desafío en el cual tuve que implementar React con Webpack desde 0, usar CSS complejo y variable, y también input táctil.',
+      link: 'https://jesuslencina.github.io/Carousel/',
+      used: ['REACT', 'WEBPACK', 'STYLED COMPONENTS'],
     },
   ],
 };

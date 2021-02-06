@@ -23,30 +23,39 @@ const StyledProjects = styled.section`
     align-items: center;
     transition: transform 0.2s;
     margin: 3rem !important;
-  }
 
-  .my-project:hover {
-    transform: scale(1.05);
-    cursor: pointer;
-  }
+    &:hover {
+      transform: scale(1.05);
+    }
 
-  .my-project .made-for {
-    display: flex;
-    align-items: center;
-  }
+    .made-for {
+      display: flex;
+      align-items: center;
 
-  .my-project .made-for img {
-    width: 24px;
-    margin: 0 0.5rem;
-  }
+      img {
+        width: 24px;
+        margin: 0 0.5rem;
+      }
 
-  .my-project p {
-    margin-top: 1rem;
-  }
+      span {
+        margin-left: 0.5rem;
+      }
+    }
 
-  .my-project b {
-    font-style: italic;
-    color: #59beb6;
+    p {
+      margin-top: 1rem;
+    }
+
+    button {
+      width: 100%;
+      margin-top: 1rem;
+      transition: transform 0.2s;
+      font-weight: 600;
+
+      &:hover {
+        transform: scale(1.035);
+      }
+    }
   }
 
   .my-project-list {
