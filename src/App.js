@@ -18,6 +18,8 @@ import Credits from './components/Credits/Credits';
 
 //FUNCTION
 function App() {
+  window.location.replace('https://jesuslencina.vercel.app/');
+
   return (
     <div className="App">
       <DataProvider>
